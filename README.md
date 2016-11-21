@@ -8,7 +8,7 @@ En estos ejercicios no hay proyecto asociado. Para tenerlos organizados, te reco
 Recuerda que es tu responsabilidad tener copias de seguridad de ellos.
 
 ## Arrays y Listas
-1. Crea un array con 10 **instancias** de un prefab (puede ser un cubo). Después añade las instancias desde dicho array a la escena, haciendo que formen una especie de escalera. Fíjate en que no es lo mismo un array con el mismo prefab en todos sus elementos que un array con una instancia del mismo prefab en cada uno de sus elementos.
+1. Crea un array con 10 **instancias** de un prefab (puede ser un cubo). Para rellenar dicho array utiliza un bucle. Después coloca las instancias desde dicho array, haciendo que formen una especie de escalera. Para esto último utiliza un segundo bucle. Fíjate en que no es lo mismo un array con el mismo prefab en todos sus elementos que un array con una instancia del mismo prefab en cada uno de sus elementos.
 
 2. Utilizando el mismo array de instancias del mismo prefab, haz que aparezca un elemento del array en la escena cada segundo, para que al final queden todos en fila.
 
