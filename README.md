@@ -18,8 +18,8 @@ Recuerda que es tu responsabilidad tener copias de seguridad de ellos.
 
 5. Repite los ejercicios anteriores usando `List<T>` en los casos en los que se pueda.
 
-6. Crea una escena con un plano de tamaño 100x100x100 colocado en (0,0,0). Crea un programa que añada a la escena una esfera cada vez que pulses la tecla espacio en una posición aleaotoria sobre el plano. Cuando pulses la tecla Enter todas las esferas deben desaparecer de la escena (eliminándolas con `GameObject.Destroy()`). ¿Por qué no puedes utilizar un array para este ejercicio?
+6. Crea una escena con un plano de tamaño 100x100x100 colocado en (0,0,0). Crea un programa que añada a la escena una esfera, en una posición aleaotoria sobre el plano, cada vez que pulses la tecla ESPACIO. Cuando pulses la tecla ENTER, todas las esferas deben desaparecer de la escena (eliminándolas con `GameObject.Destroy()`). Después de eliminar todas las esferas con ENTER tengo que poder seguir añadiendo esferas con ESPACIO. ¿Por qué no puedes utilizar un array para este ejercicio?
 
-7. Repite el ejercicio anterior, pero además de lo descrito en él la tecla D debe hacer desaparecer una esfera de las que ya hay en la escena pero escogida de forma aleatoria.
+7. Repite el ejercicio anterior, pero además de lo descrito en él la tecla D debe hacer desaparecer una esfera de las que ya hay en la escena, pero escogida de forma aleatoria.
 
 8. Crea un programa que genere 10 cubos en fila (horizontal, separado 2 metros entre sí). El cubo debe tener un script que controle su movimiento y que lo haga saltar cuando pulses su número en el teclado. Desde la clase en la que añades las instancias a la escena debes llamar a una función que provoque el salto del script de control del cubo correspondiente. ¿Hay que utilizar listas (`List<T>`) o arrays para que este programa funcione correctamente?
