@@ -20,6 +20,29 @@ Recuerda que es tu responsabilidad tener copias de seguridad de ellos.
 
 6. Crea una escena con un plano de tamaño 100x100x100 colocado en (0,0,0). Crea un programa que añada a la escena una esfera, en una posición aleaotoria sobre el plano, cada vez que pulses la tecla ESPACIO. Cuando pulses la tecla ENTER, todas las esferas deben desaparecer de la escena (eliminándolas con `GameObject.Destroy()`). Después de eliminar todas las esferas con ENTER tengo que poder seguir añadiendo esferas con ESPACIO. ¿Por qué no puedes utilizar un array para este ejercicio?
 
-7. Repite el ejercicio anterior, pero además de lo descrito en él la tecla D debe hacer desaparecer una esfera de las que ya hay en la escena, pero escogida de forma aleatoria.
-
+7. Repite el ejercicio anterior, pero además de lo descrito en él la tecla D debe hacer desaparecer una esfera de las que ya hay en la escena, pero escogida de forma aleatoria.  
+<br />
+**Comunicación entre diferentes instancias de scripts.**  
+<br />
 8. Crea un programa que genere 10 cubos en fila (horizontal, separado 2 metros entre sí). El cubo debe tener un script que controle su movimiento y que lo haga saltar cuando pulses su número en el teclado. Desde la clase en la que añades las instancias a la escena debes llamar a una función que provoque el salto del script de control del cubo correspondiente. ¿Hay que utilizar listas (`List<T>`) o arrays para que este programa funcione correctamente?
+
+9. Utiliza arrays o List<T> según convenga y explica en los comentarios del script por qué (si la explicación está mal aunque el programa funcione, el ejercicio no estará bien). Lee el enunciado entero antes de decidir.
+
+ Escribe un programa que cree un conjunto de 20 esferas que se posicionen aleatoriamente en
+un volumen de 10x10x10 unidades de Unity. Cada esfera debe tener, a su vez, un script que
+controle su movimiento: el línea recta, con dirección aleatoria y con una magnitud de la
+velocidad de 4.
+
+ Cada 2 segundos el script principal (el que ha creado las esferas) debe lanzar la orden de
+cambiar de dirección, de forma que sea cada esfera la que decida aleatoriamente su nueva
+dirección de movimiento.
+
+10. Utiliza arrays o List<T> según convenga. Lee el enunciado entero antes de decidir.
+ Crea una pila de cubos usando el gameobject PileA como referencia para la posición de forma que se añada un cubo a la misma cada 2 segundos. Cada nuevo cubo debe quedar encima de los demás. Hazlo desde un script que pongas como componente al gameobject GameController.
+ Una vez que lo anterior funcione. Modifica el script anterior para que se pueda activar la selección de cubos:
+ * Al pulsar espacio se selecciona un cubo de la lista o array (inicialmente el 0)
+ * Al pulsar las teclas arriba o abajo se selecciona el cubo de encima o de debajo del seleccionado actualmente, y este último se deselecciona.
+ * Al pulsar Return, el cubo seleccionado se pasa de la pila A a la pila B (no solo por su posición también pasa a una lista o array diferente)
+
+ La selección de un cubo debe tener feedback visual. Pon un script al prefab del cubo que tenga las funciones públicas necesarias para que el cubo llamado cubeSelector que hay dentro del mismo se cambie a color rojo cuando sea seleccionado.
+Debes gestionar bien la lista o array en cada operación de forma que no aparezcan errores de índice fuera de rango.
