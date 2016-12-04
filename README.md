@@ -22,8 +22,11 @@ Recuerda que es tu responsabilidad tener copias de seguridad de ellos.
 
 7. Repite el ejercicio anterior, pero además de lo descrito en él la tecla D debe hacer desaparecer una esfera de las que ya hay en la escena, pero escogida de forma aleatoria.  
 <br />
-**Comunicación entre diferentes instancias de scripts.**  
-<br />
+
+
+
+## Comunicación entre diferentes instancias de scripts.  
+
 8. Crea un programa que genere 10 cubos en fila (horizontal, separado 2 metros entre sí). El cubo debe tener un script que controle su movimiento y que lo haga saltar cuando pulses su número en el teclado. Desde la clase en la que añades las instancias a la escena debes llamar a una función que provoque el salto del script de control del cubo correspondiente. ¿Hay que utilizar listas (`List<T>`) o arrays para que este programa funcione correctamente?
 
 9. Utiliza arrays o List<T> según convenga y explica en los comentarios del script por qué (si la explicación está mal aunque el programa funcione, el ejercicio no estará bien). Lee el enunciado entero antes de decidir.
@@ -46,3 +49,11 @@ dirección de movimiento.
 
  La selección de un cubo debe tener feedback visual. Pon un script al prefab del cubo que tenga las funciones públicas necesarias para que el cubo llamado cubeSelector que hay dentro del mismo se cambie a color rojo cuando sea seleccionado.
 Debes gestionar bien la lista o array en cada operación de forma que no aparezcan errores de índice fuera de rango.
+
+11. Crea, desde un script en un gameobject vacío, una fila de 10 cubos con una separación de 2 metros entre sí. Cada cubo debe llevar un componente que sea instancia de un script con varios métodos públicos. 
+	* Uno que permita fijar un target
+	* Otro que permita iniciar el movimiento hacia el target fijado previamente.  
+ El target de cada cubo será el cubo siguiente. Cuando un cubo toca su target debe pararse e iniciar, llamando al método público correspondiente, el movimiento del siguiente. El último cubo se quedará quieto.
+ EL movimiento del primer cubo lo lanza el script que crea y configura la fila. No hay que usar ni listas ni arrays, pero puede que necesites varios bucles en el script principal.
+
+ 
