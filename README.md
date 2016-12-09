@@ -56,7 +56,7 @@ Debes gestionar bien la lista o array en cada operación de forma que no aparezc
 	* Otro que permita iniciar el movimiento hacia el target fijado previamente.  
 	
  El target de cada cubo será el cubo siguiente. Cuando un cubo toca su target debe pararse e iniciar, llamando al método público correspondiente, el movimiento del siguiente. El último cubo se quedará quieto.
- EL movimiento del primer cubo lo lanza el script que crea y configura la fila. No hay que usar ni listas ni arrays, pero puede que necesites varios bucles en el script principal.
+ EL movimiento del primer cubo lo lanza el script que crea y configura la fila. Necesitarás utilizar listas o arrays, y puede que necesites varios bucles en el script principal.
 
 5. Crea una escena con un reloj con tres manecillas (segundos, minutos y horas). Cada manecilla tendrá un script diferente. Desde un script principal podrás fijar la hora inicial comunicándote con el script del segundero. Esté se podrá comunicar con el del minutero, y el del minutero, a su vez, con el de las horas para fijar sus posiciones iniciales. El control del paso del tiempo lo tendrá el script del segundero que le comunicará al del minutero cuando han pasado 60 segundos para que avance. El del minutero le comunicará al de las horas cuando ha pasado una hora.
  
